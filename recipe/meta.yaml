@@ -32,7 +32,7 @@ test:
     - pytest-cov
     - coverage
   commands:
-    - pytest
+    - pytest -v --cov=pyfeeds --pyargs pyfeeds.tests
 
 about:
   home: https://git.fmrib.ox.ac.uk/fsl/pyfeeds
