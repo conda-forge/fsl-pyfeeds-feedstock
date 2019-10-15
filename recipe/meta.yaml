@@ -1,6 +1,6 @@
 {% set name = "fsl-pyfeeds" %}
-{% set version = "0.9.1" %}
-{% set sha256 = "89e214bc7f2c717922183f03d3d87a2eebf1d4016748330615a5975c834b81b3" %}
+{% set version = "0.9.2" %}
+{% set sha256 = "185a808e0b336d926d3c2b3836509eb9ceda1fe2512b00689521aa0291b89fc9" %}
 
 package:
   name: {{ name|lower }}
