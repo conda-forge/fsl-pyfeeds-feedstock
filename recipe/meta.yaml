@@ -1,6 +1,6 @@
 {% set name = "fsl-pyfeeds" %}
-{% set version = "0.9.4" %}
-{% set sha256 = "dfbbefc28018c86d09196ad217a1b7818b3bdf20761682f48535688b7374ce16" %}
+{% set version = "0.9.5" %}
+{% set sha256 = "8526978b52f830e4b919d4f7725e40aa830c863eca757ce6b4bba66a1a69ae61" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - pyfeeds = pyfeeds.main:main
 
@@ -39,7 +39,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'FSL testing framework'
+  summary: FSL testing framework
   dev_url: https://git.fmrib.ox.ac.uk/fsl/pyfeeds
 
 extra:
